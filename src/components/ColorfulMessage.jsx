@@ -1,10 +1,11 @@
 import React from "react";
 
 const ColorfulMessage = (props) => {
-  console.log(props);
+  const { color, children } = props;
   const contentAbbr = {
-    color: props.color
+    color
+    // color : color
   };
-  return <p style={contentAbbr}>{props.children}</p>;
+  return <p style={contentAbbr}>{children}</p>;
 };
 export default ColorfulMessage;
